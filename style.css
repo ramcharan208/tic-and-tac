@@ -1,0 +1,193 @@
+* {
+   /* body */
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", sans-serif;
+    background-color: rgb(46, 80, 144);
+    box-sizing: border-box;
+  }
+  
+
+   /* to hide the plaY AREA  */
+  .hide-container {
+    display: none;
+  }
+  
+
+   /* HEADING "tic tac toe "  */
+  .header {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 68px;
+    font-family: "Yellowtail";
+    
+    color: aliceblue;
+  }
+  
+
+   /* players name tag like "player1" */
+  .enter-players {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  
+
+   /* input the name field  */
+  .input-field {
+    border: 5px solid rgb(255, 0, 0);
+    outline: none;
+    padding: 4px 8px;
+    margin: 0 0 10px 4px;
+    font-size: 18px;  
+    color: #fff; 
+  }
+  
+  .input-field:focus {
+    border: 5px solid #fffb00;
+  }
+  
+
+   /* submit button info */
+  .submit-btn {
+    border: 10px solid rgb(255, 255, 255);
+    padding: 8px 8px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position:initial;
+    background-color: rgb(0, 153, 255);
+  }
+  
+  .submit-btn:active,
+  .submit-btn:focus {
+    outline: none;
+    border: 4px solid #33ff00;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffffff;
+  }
+  
+
+   /* player turn */
+  .board___player-turn {
+    text-align: center;
+    margin: 10px 0 10px;
+    height: 54px;
+    font-size: 40px;
+    font-family:Raider;
+    color: rgb(251, 255, 0);
+  }
+  
+   /* name and stlye of player name  */
+  .name--style {
+    font-size: 40px;
+    font-family:Raider;
+   
+    
+  }
+  
+
+   /* play area 'container' */
+  .board__container {
+    width: 40%;
+    background-color: rgb(255, 0, 43);
+    margin: 0 auto;
+    font-size: 0;
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 10px 9px 7px 2px rgb(0, 0, 0);
+  }
+  
+
+  .board__cell {
+    width: calc(100% / 3);
+    display: inline-block;
+    font-size: 45px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    vertical-align: top;
+    font-family: "Yellowtail";
+  }
+  
+  .board__cell--winner {
+    background-color: #ff0000;
+  }
+  
+
+  /* letters like 'X  OR O'  */
+  .letter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Yellowtail";
+    color: rgb(255, 255, 255);
+  }
+  
+
+
+  /* WINNER CONTAINER */
+   /* RESET  */
+  .reset {
+    text-align:center;
+    margin: 20px auto 0;
+   
+  }
+  
+  .reset--hidden {
+    display: none;
+  }
+  
+  .replay-btn {
+    width: 25%;
+      padding: 10px 20px;
+     border: 8px solid rgb(255, 255, 255); 
+      border-radius: 5px;
+      outline: none;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      font-size: 22px;
+      margin-top: 12px;
+      word-spacing: 3px;
+      color: #fff;
+      background-color: rgb(255, 0, 0);
+  }
+  
+  .replay-btn:hover,
+  .replay-btn:active {
+    outline: none;
+    
+    border: 8px solid rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .congratulations {
+    font-size: 32px;
+    color: aliceblue;
+  }
+  
+  .u-r-winner {
+    font-size: 23px;
+    height: 24px;
+    line-height: 23px;
+    margin: 2px 0;
+    color: aliceblue;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .board__cell {
+      font-size: 16px;
+      padding: 5px;
+      color: aliceblue;
+    }
+  
+    .replay-btn {
+      width: 50%;
+    }
+  }
